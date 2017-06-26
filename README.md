@@ -5,6 +5,12 @@ Turn ruby math expressions into latex.
 It is a pain to write some maths formulaes in latex, so here it goes rubtex which is a clone in ruby
 for https://github.com/iogf/lax
 
+# Install
+
+~~~
+gem install rubtex
+~~~
+
 # Examples
 
 ~~~

@@ -23,3 +23,7 @@ git checkout development
 
 gem build rubtex.gemspec
 gem install rubtex-0.0.1.gem
+##############################################################################
+# push the gem or publish it.
+
+gem push rubtex-0.0.1.gem
