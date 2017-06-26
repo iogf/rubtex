@@ -1,0 +1,13 @@
+#!/usr/local/bin/ruby 
+
+require 'rubtex'
+
+x = Variable.new('x')
+y = Variable.new('y')
+
+data = gets()
+puts(eval(data).to_latex())
+
+
+
+
