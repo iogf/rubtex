@@ -16,6 +16,8 @@ loop do
 begin
   data = gets()
   rst  = (b.eval(data).to_latex())
+rescue SignalException => e
+  raise e
 rescue Exception => e
   puts e.message
 else
