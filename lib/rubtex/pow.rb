@@ -4,9 +4,15 @@ class Pow < Op
     lhs = @lhs.to_latex(self)
     rhs = @rhs.to_latex(self)
 
-    "{#{lhs}}^{#{rhs}}"
+    if op.instance_of?(Mul) or op.instance_of?(Sqrt) or op.instance_of?(Pow)
+      "\\left({#{lhs}}^{#{rhs}}\\right)"
+    else
+      "{#{lhs}}^{#{rhs}}"
+    end
+
   end
 end
+
 
 
 
