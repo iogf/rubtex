@@ -4,18 +4,20 @@ require 'rubtex'
 
 
 def get_binding()
-  x = Variable.new('x')
-  y = Variable.new('y')
-
-  return binding
+  return binding 
 end
 
 b = get_binding()
 
+('a'..'z').each {|i|
+b.eval("#{i} = Variable.new(\'#{i}\')")}
+
 loop do
 data = gets()
-puts(b.eval(data).to_latex())
+rst  = (b.eval(data).to_latex())
+puts "-> #{rst}"
 end
+
 
 
 

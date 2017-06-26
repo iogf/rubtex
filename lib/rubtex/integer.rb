@@ -22,7 +22,6 @@ class Integer
 
   def to_latex op=nil
     to_s()
-
   end
 end
 
