@@ -8,7 +8,4 @@ class Sqrt < Op
   end
 end
 
-def sqrt lhs, rhs
-  Sqrt.new lhs, rhs
-end
 

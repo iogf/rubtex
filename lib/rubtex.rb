@@ -7,6 +7,8 @@ require_relative 'rubtex/div.rb'
 require_relative 'rubtex/sub.rb'
 require_relative 'rubtex/pow.rb'
 require_relative 'rubtex/sqrt.rb'
+require_relative 'rubtex/utils.rb'
+
 
 
 

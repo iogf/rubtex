@@ -8,7 +8,8 @@ s.email       = 'ioliveira@id.uff.br'
 s.files       = ["lib/rubtex.rb", 
 "lib/rubtex/div.rb", "lib/rubtex/sum.rb", "lib/rubtex/variable.rb", 
 "lib/rubtex/op.rb", "lib/rubtex/integer.rb", 
-"lib/rubtex/mul.rb", 'lib/rubtex/sub.rb', 'lib/rubtex/pow.rb', 'lib/rubtex/sqrt.rb']
+"lib/rubtex/mul.rb", 'lib/rubtex/sub.rb', 
+'lib/rubtex/pow.rb', 'lib/rubtex/sqrt.rb', 'lib/rubtex/utils.rb']
 s.executables << 'rubtex'
 end
 
