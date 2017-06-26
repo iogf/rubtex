@@ -5,8 +5,17 @@ require 'rubtex'
 x = Variable.new('x')
 y = Variable.new('y')
 
+def get_binding()
+  return binding
+end
+
+b = get_binding()
+
+loop do
 data = gets()
-puts(eval(data).to_latex())
+puts(b.eval(data).to_latex())
+end
+
 
 
 
