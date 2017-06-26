@@ -2,10 +2,11 @@
 
 require 'rubtex'
 
-x = Variable.new('x')
-y = Variable.new('y')
 
 def get_binding()
+  x = Variable.new('x')
+  y = Variable.new('y')
+
   return binding
 end
 
