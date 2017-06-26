@@ -1,6 +1,6 @@
 
 class Op
-  def initialize lhs, rhs
+  def initialize lhs=nil, rhs=nil
     @lhs = lhs
     @rhs = rhs
   end
@@ -23,6 +23,11 @@ class Op
 
   def / other
     Div.new self, other
+  end
+
+  def is_op? args
+    args.any? { |ind| 
+    self.instance_of?(ind)}
   end
 end
 

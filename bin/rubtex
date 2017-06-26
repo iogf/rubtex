@@ -13,9 +13,14 @@ b = get_binding()
 b.eval("#{i} = Variable.new(\'#{i}\')")}
 
 loop do
-data = gets()
-rst  = (b.eval(data).to_latex())
-puts "-> #{rst}"
+begin
+  data = gets()
+  rst  = (b.eval(data).to_latex())
+rescue Exception => e
+  puts e.message
+else
+  puts "-> #{rst}\n\n"
+end
 end
 
 
